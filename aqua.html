@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Laundromat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      background: #e0f7ff;
+      color: #0a3d62;
+    }
+
+    /* Hero Banner */
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1581579182331-40c7e8a3a6ef?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bGF1bmRyb21hdHxlbnwwfHx8fDE2OTU3OTk1ODU&ixlib=rb-4.0.3&q=80&w=1080') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 1.5em;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    /* Section Container */
+    section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+
+    .icon {
+      font-size: 2em;
+    }
+
+    /* Snack bar card */
+    .snack-bar-card {
+      background: linear-gradient(90deg, #ffcf70, #ffea8a);
+      color: #0a3d62;
+      padding: 25px;
+    }
+
+    /* Back button */
+    a.back-button {
+      display: inline-block;
+      margin: 20px 0;
+      text-decoration: none;
+      background: linear-gradient(90deg, #00aaff, #00ffec);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 15px;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    a.back-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #00aaff;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div>
+      <h1>Aqua Laundromat</h1>
+      <p>Fast, affordable, and relaxing laundry experience</p>
+    </div>
+  </div>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🌀</div>
+        <h3>Wash & Dry</h3>
+        <p>Full wash & dry in one machine for only 20 baht per cycle.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>Eco-Friendly Machines</h3>
+        <p>Save water and electricity while getting perfectly clean clothes.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⏰</div>
+        <h3>24/7 Self-Service</h3>
+        <p>Laundry anytime, day or night, with automated payment options.</p>
+      </div>
+      <div class="card">
+        <div class="icon">💧</div>
+        <h3>Premium Detergents</h3>
+        <p>Preloaded in every machine for bright, fresh, and clean results.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚙️</div>
+        <h3>Optional Add-ons</h3>
+        <p>Stain treatment, fabric softener, and sanitizing cycles available.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Snack & Beverage Bar</h2>
+    <div class="cards">
+      <div class="card snack-bar-card">
+        <div class="icon">☕🍹</div>
+        <h3>Relax While You Wait</h3>
+        <p>Juices, coffee, tea, and snacks available while your laundry is done.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Aqua is Better</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">💰</div>
+        <h3>Affordable</h3>
+        <p>Full wash & dry cycle for just 20 baht.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚡</div>
+        <h3>Efficient</h3>
+        <p>Modern machines reduce laundry time by half.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏡</div>
+        <h3>Convenient</h3>
+        <p>Open 24/7 with automated payments.</p>
+      </div>
+      <div class="card">
+        <div class="icon">😊</div>
+        <h3>Relaxing Environment</h3>
+        <p>Enjoy drinks, snacks, or a comfy space while waiting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Customer Experience</h2>
+    <p>Sip a smoothie, scroll your phone, or chat with friends while your clothes come out perfectly clean and dry. Aqua turns laundry into a mini lifestyle upgrade.</p>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="index.html" class="back-button">Back to Portfolio</a>
+  </div>
+
+</body>
+</html>

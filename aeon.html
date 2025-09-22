@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeon Cigarette Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Playfair Display', serif;
+      margin: 0;
+      background: #0d0d0d;
+      color: #f5f5f5;
+    }
+
+    /* Hero Banner */
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1534180477871-5d5c1f4f7b11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8c21va2UsZGFya298fHx8fHwxNjk1ODI1NzQ2&ixlib=rb-4.0.3&q=80&w=1080') center/cover no-repeat;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffd700;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #f1c40f;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+    }
+
+    /* Section Container */
+    section {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ffd700;
+      padding-bottom: 5px;
+      color: #ffd700;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #ffd700;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      line-height: 1.5;
+      color: #ddd;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #e74c3c;
+    }
+
+    /* Back button */
+    a.back-button {
+      display: inline-block;
+      margin: 20px 0;
+      text-decoration: none;
+      background: linear-gradient(90deg, #ffd700, #e67e22);
+      color: #0d0d0d;
+      padding: 12px 25px;
+      border-radius: 15px;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    a.back-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div>
+      <h1>Aeon Cigarette Company</h1>
+      <p>Luxury. Strength. Timelessness.</p>
+    </div>
+  </div>
+
+<section>
+  <h2>Pack Options</h2>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🚬</div>
+      <h3>20 Pack</h3>
+      <p>Compact, sleek, and easy to carry. Perfect for those who prefer something quick and convenient.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🚬</div>
+      <h3>30 Pack</h3>
+      <p>A balanced choice offering more value and lasting longer. Designed for the regular smoker.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🚬</div>
+      <h3>50 Pack</h3>
+      <p>For those who want maximum supply and endurance. Bold and powerful, just like Aeon’s brand identity.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section>
+    <h2>Why Aeon is Better</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">🔥</div>
+        <h3>Premium Quality</h3>
+        <p>Every cigarette crafted with precision and consistency for a smooth experience.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⚖️</div>
+        <h3>Variety of Packs</h3>
+        <p>From 20 to 50 packs, Aeon caters to every lifestyle with convenience and flexibility.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⏳</div>
+        <h3>Timeless Brand</h3>
+        <p>Built on elegance and endurance, Aeon represents more than smoking—it represents legacy.</p>
+      </div>
+    </div>
+  </section>
+
+  <div style="text-align:center;">
+    <a href="index.html" class="back-button">Back to Portfolio</a>
+  </div>
+
+</body>
+</html>
