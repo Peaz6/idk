@@ -43,7 +43,21 @@ h1 {
   margin-bottom: 20px;
   text-shadow: 2px 2px #000;
 }
-h2 {
+
+.left-section h2 {
+  color: #4caf50;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.contact-container h2 {
+  color: #2196f3;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #000;
+}
+
+.projects-container h2 {
+  color: #ff9800;
   margin-bottom: 20px;
   text-shadow: 2px 2px #000;
 }
